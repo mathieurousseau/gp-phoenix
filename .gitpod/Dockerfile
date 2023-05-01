@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -yq \
     git-lfs \
     inotify-tools \
     sudo \
+    zsh \
     && apt-get clean && rm -rf /var/cache/apt/* /var/lib/apt/lists/* /tmp/*
 
 
