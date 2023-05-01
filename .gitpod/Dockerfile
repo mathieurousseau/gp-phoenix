@@ -10,7 +10,7 @@ RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
 
 USER gitpod
 
-RUN apt-get install inotify-tools -y \
+RUN sudo apt-get install inotify-tools -y \
     && mix local.hex --force \
     && mix local.rebar --force \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
